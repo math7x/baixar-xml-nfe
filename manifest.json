@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Baixar XML de NFe",
+  "version": "1.0.0",
+  "description": "Organize chaves de acesso e abra a consulta da NFe para baixar os XMLs.",
+  "permissions": ["storage", "tabs", "activeTab", "scripting", "downloads", "debugger"],
+  "host_permissions": ["https://www.nfe.fazenda.gov.br/portal/*"],
+  "action": { "default_title": "Baixar XML de NFe", "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    { "matches": ["https://www.nfe.fazenda.gov.br/portal/*"], "js": ["content.js"], "run_at": "document_idle" }
+  ]
+}

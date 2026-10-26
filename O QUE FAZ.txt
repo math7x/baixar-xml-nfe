@@ -1,0 +1,3 @@
+﻿Extensão - consultar e baixar XML de notas fiscais
+
+Localiza chaves de NF-e na página aberta, permite escolher as notas e conduz a consulta e o download de XML no portal oficial. O desafio hCaptcha e eventuais exigências de certificado dependem de ação do usuário.
